@@ -1,0 +1,81 @@
+{% set title = 'Главная' %} {% extends 'layouts/_main.html' %} {% block content
+%}
+<!-- bredcrumbs -->
+<div class="bredcrumbs__block">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="">Главная</a></li>
+            <li class="bredcrumbs_separator">»</li>
+            <li>Корзина</li>
+        </ul>
+    </div>
+</div>
+<!--END bredcrumbs -->
+<!-- cart -->
+<div class="cart">
+    <div class="container">
+        <h1 class="page__title">Корзина</h1>
+        <div class="cart__products">
+            <!-- cart__product -->
+            <div class="cart__product">
+                <a href="/" class="cart__product__img"></a>
+                <a href="/" class="cart__product__name">ТЭНБ для воды 12,0 кВт (угл.сталь)</a>
+                <div class="cart__product__price">2500 руб.</div>
+                <form action="">
+                    <input type="number" class="input">
+                </form>
+                <form action="" class="cart__product__delete">
+                    <button class="btn">Удалить</button>
+                </form>
+            </div>
+            <!-- cart__product -->
+            <!-- cart__product -->
+            <div class="cart__product">
+                <a href="/" class="cart__product__img"></a>
+                <a href="/" class="cart__product__name">ТЭНБ для воды 12,0 кВт (угл.сталь)</a>
+                <div class="cart__product__price">2500 руб.</div>
+                <form action="">
+                    <input type="number" class="input">
+                </form>
+                <form action="" class="cart__product__delete">
+                    <button class="btn">Удалить</button>
+                </form>
+            </div>
+            <!-- cart__product -->
+        </div>
+        <div class="cart__itogo"><span>Итого:</span> 17 400 руб.</div>
+        <form class="cart__ordering">
+            <div class="section__title">Оформление заказа</div>
+            <div class="cart__ordering__block">
+                <label for="">Ваш Email:</label>
+                <input type="text" placeholder="example@mail.ru" class="input">
+                <label for="">Ваше имя:</label>
+                <input type="text" placeholder="Иван" class="input">
+                <label for="">Ваш номер телефона:</label>
+                <input type="text" placeholder="+7 (999) 999-9999" class="input">
+                <label for="">Комментарий к заказу:</label>
+                <textarea name="" id="" cols="30" rows="10" class="input"></textarea>
+            </div>
+            <div class="cart__ordering__block">
+                <label for="">Способы оплаты:</label>
+                <label for="radio-1" class="radio">
+                    <input id="radio-1" type="radio">
+                    <span class="radio__text">
+                        <span class="radio__text__box"></span>
+                        Оплата наличными
+                    </span>
+                </label>
+                <label for="">Варианты доставки:</label>
+                <label for="radio-2" class="radio">
+                    <input id="radio-2" type="radio">
+                    <span class="radio__text">
+                        <span class="radio__text__box"></span>
+                        Самовывоз
+                    </span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+<!--END cart -->
+{% endblock %}
