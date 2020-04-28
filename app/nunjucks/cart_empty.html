@@ -1,0 +1,25 @@
+{% set title = 'Главная' %} {% extends 'layouts/_main.html' %} {% block content
+%}
+<!-- bredcrumbs -->
+<div class="bredcrumbs__block">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="">Главная</a></li>
+            <li class="bredcrumbs_separator">»</li>
+            <li>Корзина</li>
+        </ul>
+    </div>
+</div>
+<!--END bredcrumbs -->
+<!-- cart -->
+<div class="cart">
+    <div class="container">
+        <div class="cart__empty">
+            <h1 class="page__title">Корзина пуста!</h1>
+            <div class="page__desc">Вы еще ничего не выбрали!</div>
+            <a href="/" class="btn">Перейти в каталог</a>
+        </div>
+    </div>
+</div>
+<!--END cart -->
+{% endblock %}
