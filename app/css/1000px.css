@@ -1,0 +1,8 @@
+@media screen and (max-width: 1000px) {
+  .header__nav__searchform {
+    display: none;
+  }
+  .header__nav__cart {
+    margin-left: auto;
+  }
+}

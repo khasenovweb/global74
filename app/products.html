@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
@@ -28,6 +29,13 @@
                     <div class="header__head__phone__desc"> звонок по России бесплатный </div>
                 </div>
                 <button class="btn" data-modal-show="callorder">Заказать звонок</button>
+                <!-- mobile_elements -->
+                <a href="/" class="header__nav__cart header__nav__cart__mobile">
+                    <span class="header__nav__cart__count">3</span>
+                    <img src="img/cart.svg" alt="" />
+                </a>
+                <div class="header__head__hamburger"></div>
+                <!--END mobile_elements -->
             </div>
         </div>
         <div class="header__nav">
@@ -66,6 +74,16 @@
                 <li><a href="">Главная</a></li>
                 <li class="bredcrumbs_separator">»</li>
                 <li>Каталог</li>
+                <li class="bredcrumbs_separator">»</li>
+                <li>Каталог</li>
+                <li class="bredcrumbs_separator">»</li>
+                <li>Каталог</li>
+                <li class="bredcrumbs_separator">»</li>
+                <li>Каталог</li>
+                <li class="bredcrumbs_separator">»</li>
+                <li>Каталог</li>
+                <li class="bredcrumbs_separator">»</li>
+                <li>Каталог</li>
             </ul>
         </div>
     </div>
@@ -75,6 +93,12 @@
         <div class="container">
             <h1 class="page__title">Блоки ТЭН, комплектующие</h1>
             <p class="page__desc"> Блок ТЭН или (ТЭНБ) используется в оборудовании для подогрева жидкостей, в том числе и масла. Чаще всего блоки ТЭНов установлены в водонагревателях, котлах, парогенераторах, а также других установках бытового и промышленного назначения. </p>
+            <div class="products__items__subcategory">
+                <a href="katalog/ten-i-bloki-ten/ten-dlya-pivovarni/" class="btn btn__circle">ТЭН для пивоварни</a>
+                <a href="katalog/ten-i-bloki-ten/mediczinskie-tenyi/" class="btn btn__circle">Медицинские ТЭНы</a>
+                <a href="katalog/ten-i-bloki-ten/harvia-ten/" class="btn btn__circle">HARVIA ТЭН</a>
+                <a href="katalog/ten-i-bloki-ten/bloki-ten,-komplektuyushhie/" class="btn btn__circle">Блоки ТЭН, комплектующие</a>
+            </div>
             <div class="products__items">
                 <!-- products__item -->
                 <div class="products__item">
@@ -232,11 +256,46 @@
             </div>
         </div>
     </div>
+    <div class="modal__wrapper modal__wrapper__center" data-modal="callorder">
+        <div class="modal animated">
+            <div class="modal__close" data-modal-close="callorder">
+                <img src="img/close.svg" alt="">
+            </div>
+            <div class="modal__head">
+                <div class="section__title">Товар добавлен в корзину</div>
+            </div>
+            <div class="modal__body">
+                <a href="/" class="btn">Перейти в корзину</a>
+            </div>
+        </div>
+    </div>
     <!-- ==============================END MODALS =================================== -->
+    <!-- ==============================END MOBILE NAV =================================== -->
+    <div class="mobile__nav__wrapper">
+        <div class="mobile__nav">
+            <form action="" class="header__nav__searchform header__nav__searchform__mobile">
+                <input type="text" placeholder="Поиск по сайту" class="input searchinput">
+                <button>
+                    <img src="img/search.svg" alt="" />
+                </button>
+            </form>
+            <ul class="mobile__nav__links">
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Прайсы</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <button class="btn">Заказать звонок</button>
+        </div>
+    </div>
+    <!-- ==============================END MOBILE NAV =================================== -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/main.js"></script>
 </body>
 

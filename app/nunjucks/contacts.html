@@ -1,0 +1,42 @@
+{% set title = 'Главная' %} {% extends 'layouts/_main.html' %} {% block content
+%}
+
+<!-- bredcrumbs -->
+<div class="bredcrumbs__block">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="">Главная</a></li>
+            <li class="bredcrumbs_separator">»</li>
+            <li>Каталог</li>
+        </ul>
+    </div>
+</div>
+<!--END bredcrumbs -->
+
+<!-- contacts -->
+<div class="categories">
+    <div class="container">
+        <h1 class="page__title">Контакты</h1>
+        <ul class="contacts__list">
+            <li class="contacts__list__label">Режим работы:</li>
+            <li>Понедельник - пятница с 9:00 - до 18:00.</li>
+            <li>Суббота - воскресенье: выходной.</li>
+            <li class="contacts__list__label">Отдел продаж:</li>
+            <li><a href="tel:8 800 222 57 66">8 800 222 57 66</a></li>
+            <li class="contacts__list__label">Дирекция:</li>
+            <li><a href="tel:8 800 222 57 66">8 908 939 11 10</a></li>
+            <li class="contacts__list__label">E-mail:</li>
+            <li>
+                <a href="mailto:proteko_zakaz@mail.ru">proteko_zakaz@mail.ru</a>
+            </li>
+            <li class="contacts__list__label">Адрес:</li>
+            <li>
+                г. Миасс, Челябинская обл., Тургоякское шоссе 5/25.
+            </li>
+        </ul>
+        <div class="contacts__map" id="contacts__map"></div>
+    </div>
+</div>
+<!--END contacts -->
+
+{% endblock %}

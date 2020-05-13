@@ -1,0 +1,27 @@
+{% set title = 'Главная' %} {% extends 'layouts/_main.html' %} {% block content
+%}
+<!-- bredcrumbs -->
+<div class="bredcrumbs__block">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="">Главная</a></li>
+            <li class="bredcrumbs_separator">»</li>
+            <li>Корзина</li>
+        </ul>
+    </div>
+</div>
+<!--END bredcrumbs -->
+<!-- search -->
+<div class="search">
+    <div class="container">
+        <div class="page__title"><span class="maincolor">5</span> результатов найдено для "<span class="maincolor">ар</span>"</div>
+        <ul class="search__results">
+            <li class="search__result">
+                <a href="/" class="search__result__title">Результат 1</a>
+                <div class="search__result__desc">Описание dfdkfjb lksjdbsjdhv sjdhskjdhb</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--END search -->
+{% endblock %}

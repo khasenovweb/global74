@@ -1,0 +1,50 @@
+{% set title = 'Главная' %} {% extends 'layouts/_main.html' %} {% block content
+%}
+
+<!-- bredcrumbs -->
+<div class="bredcrumbs__block">
+    <div class="container">
+        <ul class="bredcrumbs">
+            <li><a href="">Главная</a></li>
+            <li class="bredcrumbs_separator">»</li>
+            <li>Каталог</li>
+        </ul>
+    </div>
+</div>
+<!--END bredcrumbs -->
+
+<!-- prices -->
+<div class="categories">
+    <div class="container">
+        <h1 class="page__title">Прайс-листы</h1>
+        <ul class="prices__items">
+            <!-- prices__item -->
+            <li class="prices__item">
+                <img src="img/pdf.svg" alt="" class="prices__item__icon" />
+                <a href="" class="prices__item__link"
+                    >Каталог гидравлических коллекторов.pdf</a
+                >
+            </li>
+            <!--END prices__item -->
+            <!-- prices__item -->
+            <li class="prices__item">
+                <img src="img/pdf.svg" alt="" class="prices__item__icon" />
+                <a href="" class="prices__item__link"
+                    >Каталог гидравлических коллекторов.pdf</a
+                >
+            </li>
+            <!--END prices__item -->
+            <!-- prices__item -->
+            <li class="prices__item">
+                <img src="img/pdf.svg" alt="" class="prices__item__icon" />
+                <a href="" class="prices__item__link"
+                    >Каталог гидравлических коллекторов.pdf</a
+                >
+            </li>
+            <!--END prices__item -->
+        </ul>
+    </div>
+</div>
+<!--END prices -->
+
+{% endblock %}
